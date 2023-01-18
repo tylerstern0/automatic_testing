@@ -11,7 +11,6 @@ reg = LinearRegression().fit(X, y.ravel())
 # Print out training r2
 print(reg.score(X,y.ravel() ))
 
-# simple change
 # Write the model to a file
 if not os.path.isdir("models/"):
     os.mkdir("models")
