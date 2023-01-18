@@ -3,7 +3,8 @@ from sklearn.linear_model import LinearRegression
 import pickle
 import os
 
-X, y = make_regression(10000,n_features = 10)
+print('Training linear regression model...')
+X, y = make_regression(10000,n_features = 11)
 
 # Train a model
 reg = LinearRegression().fit(X, y.ravel())
